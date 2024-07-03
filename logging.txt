@@ -12,7 +12,7 @@ Multiparts:		<none>
 Body:
 {
     "location": {
-        "lat": 41.87893233408357,
+        "lat": 41.878932334,
         "lng": -87.66676744998608
     },
     "accuracy": 20,
@@ -23,11 +23,11 @@ Body:
         "asdnka",
         "iqiwp"
     ],
-    "website": null,
+    "website": "Google.com",
     "language": "En-Ind"
 }
 HTTP/1.1 200 OK
-Date: Wed, 03 Jul 2024 18:15:25 GMT
+Date: Wed, 03 Jul 2024 18:22:37 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -40,8 +40,8 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "893d19459b3cbe8cd3284da89044ccdd",
+    "place_id": "bb5ec73e2773081b882eb898ba418dc8",
     "scope": "APP",
-    "reference": "1e1051260b542ab626266421863b72c81e1051260b542ab626266421863b72c8",
-    "id": "1e1051260b542ab626266421863b72c8"
+    "reference": "00df998147ab111309cb649748db816900df998147ab111309cb649748db8169",
+    "id": "00df998147ab111309cb649748db8169"
 }
