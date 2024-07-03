@@ -13,6 +13,7 @@ import java.io.PrintStream;
 public class Utils {
     public RequestSpecification reqSpecs(){
         PrintStream logReq;
+
         
         try {
             logReq = new PrintStream(new FileOutputStream("logging.txt"));
