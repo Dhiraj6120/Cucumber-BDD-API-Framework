@@ -1,0 +1,47 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json/?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "location": {
+        "lat": 41.87893233408357,
+        "lng": -87.66676744998608
+    },
+    "accuracy": 20,
+    "name": "Shoes Shop",
+    "phone_number": "+1 5058188687",
+    "address": "Ashland & Adams, Chicago, IL 60612, United States",
+    "types": [
+        "asdnka",
+        "iqiwp"
+    ],
+    "website": null,
+    "language": "En-Ind"
+}
+HTTP/1.1 200 OK
+Date: Wed, 03 Jul 2024 17:43:15 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "9f943cf4a4ec350d38ef05b45003300e",
+    "scope": "APP",
+    "reference": "345c568f445a615ba5e23f2a9b2006ed345c568f445a615ba5e23f2a9b2006ed",
+    "id": "345c568f445a615ba5e23f2a9b2006ed"
+}
