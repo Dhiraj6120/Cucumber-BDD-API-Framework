@@ -1,5 +1,7 @@
 package stepDefinition;
 
+import Resources.GetTestData;
+import Resources.SpecReqClass;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -27,27 +29,11 @@ public class StepDefinition {
     String googleAddPlaceAPIResponse;
     @Given("Add place API payload")
     public void add_place_api_payload() {
-        RestAssured.baseURI = "https://rahulshettyacademy.com/maps/api/";
-        GoogleAddPlaceAPIRequest googleAddPlaceAPIRequest = new GoogleAddPlaceAPIRequest();
-        Location location = new Location();
-        location.setLat(41.87893233408357);
-        location.setLng(-87.66676744998608);
-        googleAddPlaceAPIRequest.setLocation(location);
-        googleAddPlaceAPIRequest.setAccuracy(20);
-        googleAddPlaceAPIRequest.setName("Shoes Shop");
-        googleAddPlaceAPIRequest.setPhone_number("+1 5058188687");
-        googleAddPlaceAPIRequest.setAddress("Ashland & Adams, Chicago, IL 60612, United States");
-        googleAddPlaceAPIRequest.setLanguage("Eng-us");
-        ArrayList<String> types = new ArrayList<>();
-        types.add("asdnka");
-        types.add("iqiwp");
-        googleAddPlaceAPIRequest.setTypes(types);
-        googleAddPlaceAPIRequest.setLanguage("En-Ind");
 
-        req= new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com/maps/api/")
-                .setContentType(ContentType.JSON)
-                .build();
+        GetTestData addData = new GetTestData();
+        GoogleAddPlaceAPIRequest googleAddPlaceAPIRequest = addData.addPlacePayload();
 
+        req= SpecReqClass.reqSpecs();
         res = new ResponseSpecBuilder().expectStatusCode(200).build();
 
         googleAddPlaceRequest = given().spec(req).queryParam("key", "qaclick123").body(googleAddPlaceAPIRequest);
