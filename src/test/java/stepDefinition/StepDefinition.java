@@ -29,8 +29,8 @@ public class StepDefinition extends Utils{
     }
     @When("User calls the add place API with post request")
     public void user_calls_the_add_place_api_with_post_request() throws IOException {
-        getProp();
-        googleAddPlaceAPIResponse = googleAddPlaceRequest.when().post(addPlaceRequest)
+
+        googleAddPlaceAPIResponse = googleAddPlaceRequest.when().post(getProp().getProperty("addPlaceRequest"))
                 .then().extract().response().asString();
     }
 
