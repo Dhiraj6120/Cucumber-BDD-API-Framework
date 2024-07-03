@@ -12,6 +12,8 @@ import io.restassured.specification.ResponseSpecification;
 import org.testng.Assert;
 import pojo.GooglePlaceAPI.GoogleAddPlaceAPIRequest;
 
+import java.io.IOException;
+
 import static io.restassured.RestAssured.given;
 
 public class StepDefinition extends Utils{
@@ -26,9 +28,9 @@ public class StepDefinition extends Utils{
         googleAddPlaceRequest = given().spec(reqSpecs()).queryParam("key", "qaclick123").body(googleAddPlaceAPIRequest);
     }
     @When("User calls the add place API with post request")
-    public void user_calls_the_add_place_api_with_post_request() {
-
-        googleAddPlaceAPIResponse = googleAddPlaceRequest.when().post("place/add/json/")
+    public void user_calls_the_add_place_api_with_post_request() throws IOException {
+        getProp();
+        googleAddPlaceAPIResponse = googleAddPlaceRequest.when().post(addPlaceRequest)
                 .then().extract().response().asString();
     }
 

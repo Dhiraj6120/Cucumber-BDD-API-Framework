@@ -4,11 +4,17 @@ import io.restassured.RestAssured;
 import pojo.GooglePlaceAPI.GoogleAddPlaceAPIRequest;
 import pojo.GooglePlaceAPI.Location;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
-public class GetTestData {
+public class GetTestData extends Utils{
     public GoogleAddPlaceAPIRequest addPlacePayload(){
-        RestAssured.baseURI = "https://rahulshettyacademy.com/maps/api/";
+        try {
+            getProp();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        RestAssured.baseURI = baseUrl;
         GoogleAddPlaceAPIRequest googleAddPlaceAPIRequest = new GoogleAddPlaceAPIRequest();
         Location location = new Location();
         location.setLat(41.87893233408357);
