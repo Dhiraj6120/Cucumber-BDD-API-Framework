@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3191953c-6deb-46ed-9b36-5c71173332a1" name="Changes" comment="Added required dependencies for project">
-      <change afterPath="$PROJECT_DIR$/src/test/java/cucumber/Options/TestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/feature/placeValidation.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/StepDefinition.java" afterDir="false" />
+    <list default="true" id="3191953c-6deb-46ed-9b36-5c71173332a1" name="Changes" comment="Basic Trial with Cucumber and testNG">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojo/GooglePlaceAPI/GoogleAddPlaceAPIRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojo/GooglePlaceAPI/GoogleAddPlaceAPIResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojo/GooglePlaceAPI/Location.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/feature/placeValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/feature/placeValidation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/StepDefinition.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +27,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2iiequ4HtjF0dGwgFlFcOOsOmWo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration name="TestRunner" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Cucumber_BDD_API_Framework" />
@@ -50,7 +66,27 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="Basic Trial with Cucumber and testNG">
+      <created>1719896209636</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1719896209636</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3191953c-6deb-46ed-9b36-5c71173332a1" name="Changes" comment="Basic Trial with Cucumber and testNG" />
+      <created>1719978020233</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719978020233</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Basic Trial with Cucumber and testNG" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic Trial with Cucumber and testNG" />
   </component>
 </project>
