@@ -10,11 +10,10 @@ import java.util.ArrayList;
 public class GetTestData extends Utils{
     public GoogleAddPlaceAPIRequest addPlacePayload(){
         try {
-            getProp();
+            RestAssured.baseURI = getProp().getProperty("baseUrl");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        RestAssured.baseURI = baseUrl;
         GoogleAddPlaceAPIRequest googleAddPlaceAPIRequest = new GoogleAddPlaceAPIRequest();
         Location location = new Location();
         location.setLat(41.87893233408357);

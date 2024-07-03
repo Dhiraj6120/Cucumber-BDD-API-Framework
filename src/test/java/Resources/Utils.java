@@ -10,8 +10,6 @@ import java.io.*;
 import java.util.Properties;
 
 public class Utils {
-    public String baseUrl;
-    public String addPlaceRequest;
     public RequestSpecification reqSpecs(){
 
         PrintStream logReq;
@@ -27,13 +25,13 @@ public class Utils {
                 .build();
         return requestSpecification;
     }
-    public void getProp() throws IOException {
+    public Properties getProp() throws IOException {
         Properties prop = new Properties();
         FileInputStream fis = new FileInputStream
                 ("/Users/dhiraj/Documents/Study/Cucumber BDD API Framework/src/test/java/DataSet/Data.properties");
         prop.load(fis);
-        this.baseUrl = prop.getProperty("baseUrl");
-        this.addPlaceRequest = prop.getProperty("addPlaceRequest");
+
+        return prop;
     }
 
 }
