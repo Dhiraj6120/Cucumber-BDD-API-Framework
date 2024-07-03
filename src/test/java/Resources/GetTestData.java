@@ -16,7 +16,7 @@ public class GetTestData extends Utils{
         }
         GoogleAddPlaceAPIRequest googleAddPlaceAPIRequest = new GoogleAddPlaceAPIRequest();
         Location location = new Location();
-        location.setLat(41.87893233408357);
+        location.setLat(41.878932334);
         location.setLng(-87.66676744998608);
         googleAddPlaceAPIRequest.setLocation(location);
         googleAddPlaceAPIRequest.setAccuracy(20);
@@ -27,6 +27,7 @@ public class GetTestData extends Utils{
         ArrayList<String> types = new ArrayList<>();
         types.add("asdnka");
         types.add("iqiwp");
+        googleAddPlaceAPIRequest.setWebsite("Google.com");
         googleAddPlaceAPIRequest.setTypes(types);
         googleAddPlaceAPIRequest.setLanguage("En-Ind");
         return googleAddPlaceAPIRequest;
