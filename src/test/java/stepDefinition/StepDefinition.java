@@ -36,6 +36,6 @@ public class StepDefinition extends Utils{
     public void addPlaceAPIPayloadWith(String name, String language, String address) {
         GetTestData addData = new GetTestData();
         GoogleAddPlaceAPIRequest googleAddPlaceAPIRequest = addData.addPlacePayload(name, language, address);
-        googleAddPlaceRequest = given().spec(reqSpecs()).queryParam("key", "qaclick123").body(googleAddPlaceAPIRequest);
+        googleAddPlaceRequest = given().spec(reqSpecs(name)).queryParam("key", "qaclick123").body(googleAddPlaceAPIRequest);
     }
 }

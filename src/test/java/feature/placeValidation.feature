@@ -7,7 +7,7 @@ Feature: Validate the Google place API's
     And "scope" should be "APP"
     Examples:
       |name |language|address  |
-      |Suraj|Marathi |Sinner   |
-      |Rohit|English |Chandwad |
-      |Dipak|Hindi   |Kanadgaon|
+      |Poha Center|Marathi |Sinner   |
+      |McDonalds|English |Chandwad |
+      |Idli centre|Hindi   |Kanadgaon|
 

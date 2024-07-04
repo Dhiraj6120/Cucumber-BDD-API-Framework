@@ -16,7 +16,7 @@ Body:
         "lng": -87.66676744998608
     },
     "accuracy": 20,
-    "name": "Dipak",
+    "name": "Idli centre",
     "phone_number": "+1 5058188687",
     "address": "Kanadgaon",
     "types": [
@@ -27,7 +27,7 @@ Body:
     "language": "En-Ind"
 }
 HTTP/1.1 200 OK
-Date: Thu, 04 Jul 2024 04:10:13 GMT
+Date: Thu, 04 Jul 2024 04:19:43 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -40,8 +40,8 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "07ea445d4deee119319a39ef6d75ba5e",
+    "place_id": "12b5d3856ac6e2b62ff9717092f28e54",
     "scope": "APP",
-    "reference": "a8c344704f26e607612150bddbe4a698a8c344704f26e607612150bddbe4a698",
-    "id": "a8c344704f26e607612150bddbe4a698"
+    "reference": "b75170645210dac3bf65a79e000dfc96b75170645210dac3bf65a79e000dfc96",
+    "id": "b75170645210dac3bf65a79e000dfc96"
 }
