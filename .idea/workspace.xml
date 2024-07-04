@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6034e9a1-bb73-4e38-84f7-0b6bade14db3" name="Changes" comment="Used Cucumber Scenario outline and Example for Data Driven Mechanism">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Results/logging_1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Results/logging_2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Results/logging_3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logging_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logging_1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logging_2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logging_2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logging_3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logging_3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Resources/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Resources/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/feature/placeValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/feature/placeValidation.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/StepDefinition.java" afterDir="false" />
+    <list default="true" id="6034e9a1-bb73-4e38-84f7-0b6bade14db3" name="Changes" comment="Working with Enums">
+      <change beforePath="$PROJECT_DIR$/src/test/java/DataSet/Data.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DataSet/Data.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,13 +16,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature-branch-01" />
+        <entry key="$PROJECT_DIR$" value="feature-branch-03" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,6 +36,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feature-branch-04" />
+                    <option name="lastUsedInstant" value="1720068216" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="feature-branch-03" />
                     <option name="lastUsedInstant" value="1720028729" />
@@ -170,7 +166,21 @@
       <option name="project" value="LOCAL" />
       <updated>1720066262860</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Used Cucumber Scenario outline and Example for Data Driven Mechanism and Added new loginc for login the responce">
+      <created>1720066898239</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1720066898239</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Working with Enums">
+      <created>1720068167689</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1720068167689</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,6 +198,8 @@
     <MESSAGE value="Code Optimization" />
     <MESSAGE value="Added Website in Payload" />
     <MESSAGE value="Used Cucumber Scenario outline and Example for Data Driven Mechanism" />
-    <option name="LAST_COMMIT_MESSAGE" value="Used Cucumber Scenario outline and Example for Data Driven Mechanism" />
+    <MESSAGE value="Used Cucumber Scenario outline and Example for Data Driven Mechanism and Added new loginc for login the responce" />
+    <MESSAGE value="Working with Enums" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working with Enums" />
   </component>
 </project>
