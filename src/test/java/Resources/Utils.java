@@ -10,12 +10,14 @@ import java.io.*;
 import java.util.Properties;
 
 public class Utils {
+    public static int ss = 1;
     public RequestSpecification reqSpecs(){
 
         PrintStream logReq;
         
         try {
-            logReq = new PrintStream(new FileOutputStream("logging.txt"));
+            logReq = new PrintStream(new FileOutputStream("logging_" + ss +".txt"));
+            ss++;
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }

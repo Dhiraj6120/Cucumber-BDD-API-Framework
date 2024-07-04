@@ -18,15 +18,7 @@ import static io.restassured.RestAssured.given;
 
 public class StepDefinition extends Utils{
     RequestSpecification googleAddPlaceRequest;
-    RequestSpecification req;
-    ResponseSpecification res;
     String googleAddPlaceAPIResponse;
-    @Given("Add place API payload")
-    public void add_place_api_payload() {
-        GetTestData addData = new GetTestData();
-        GoogleAddPlaceAPIRequest googleAddPlaceAPIRequest = addData.addPlacePayload();
-        googleAddPlaceRequest = given().spec(reqSpecs()).queryParam("key", "qaclick123").body(googleAddPlaceAPIRequest);
-    }
     @When("User calls the add place API with post request")
     public void user_calls_the_add_place_api_with_post_request() throws IOException {
 
@@ -40,5 +32,10 @@ public class StepDefinition extends Utils{
         Assert.assertEquals(jsonPath.getString(expectedKey), expectedValue);
     }
 
-
+    @Given("Add place API payload with {string} {string} {string}")
+    public void addPlaceAPIPayloadWith(String name, String language, String address) {
+        GetTestData addData = new GetTestData();
+        GoogleAddPlaceAPIRequest googleAddPlaceAPIRequest = addData.addPlacePayload(name, language, address);
+        googleAddPlaceRequest = given().spec(reqSpecs()).queryParam("key", "qaclick123").body(googleAddPlaceAPIRequest);
+    }
 }
