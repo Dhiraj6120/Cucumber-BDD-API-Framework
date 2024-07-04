@@ -16,9 +16,9 @@ Body:
         "lng": -87.66676744998608
     },
     "accuracy": 20,
-    "name": "Dipak",
+    "name": "McDonalds",
     "phone_number": "+1 5058188687",
-    "address": "Kanadgaon",
+    "address": "Chandwad",
     "types": [
         "asdnka",
         "iqiwp"
@@ -27,7 +27,7 @@ Body:
     "language": "En-Ind"
 }
 HTTP/1.1 200 OK
-Date: Thu, 04 Jul 2024 03:55:28 GMT
+Date: Thu, 04 Jul 2024 04:19:43 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -40,8 +40,8 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "a74ccac8d276500691a9f774fcee5d66",
+    "place_id": "78b307c4945354e6f872aa3415681507",
     "scope": "APP",
-    "reference": "4c92dc5f6ec21887dde79c2148649eb04c92dc5f6ec21887dde79c2148649eb0",
-    "id": "4c92dc5f6ec21887dde79c2148649eb0"
+    "reference": "06d98ac83f75f09d07ca82f4cc65af2606d98ac83f75f09d07ca82f4cc65af26",
+    "id": "06d98ac83f75f09d07ca82f4cc65af26"
 }

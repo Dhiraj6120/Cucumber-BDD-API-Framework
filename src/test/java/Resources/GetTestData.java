@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class GetTestData extends Utils{
-    public GoogleAddPlaceAPIRequest addPlacePayload(){
+    public GoogleAddPlaceAPIRequest addPlacePayload(String name, String language, String address){
         try {
             RestAssured.baseURI = getProp().getProperty("baseUrl");
         } catch (IOException e) {
@@ -20,10 +20,10 @@ public class GetTestData extends Utils{
         location.setLng(-87.66676744998608);
         googleAddPlaceAPIRequest.setLocation(location);
         googleAddPlaceAPIRequest.setAccuracy(20);
-        googleAddPlaceAPIRequest.setName("Shoes Shop");
+        googleAddPlaceAPIRequest.setName(name);
         googleAddPlaceAPIRequest.setPhone_number("+1 5058188687");
-        googleAddPlaceAPIRequest.setAddress("Ashland & Adams, Chicago, IL 60612, United States");
-        googleAddPlaceAPIRequest.setLanguage("Eng-us");
+        googleAddPlaceAPIRequest.setAddress(address);
+        googleAddPlaceAPIRequest.setLanguage(language);
         ArrayList<String> types = new ArrayList<>();
         types.add("asdnka");
         types.add("iqiwp");

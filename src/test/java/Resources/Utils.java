@@ -10,20 +10,21 @@ import java.io.*;
 import java.util.Properties;
 
 public class Utils {
-    public RequestSpecification reqSpecs(){
+    public static int ss = 1;
+    public RequestSpecification reqSpecs(String name){
 
         PrintStream logReq;
         
         try {
-            logReq = new PrintStream(new FileOutputStream("logging.txt"));
+            logReq = new PrintStream(new FileOutputStream("src/test/java/Results/" + name +".txt"));
+            ss++;
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
-        RequestSpecification requestSpecification = new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com/maps/api/")
+        return new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com/maps/api/")
                 .setContentType(ContentType.JSON).addFilter(RequestLoggingFilter.logRequestTo(logReq))
                 .addFilter(ResponseLoggingFilter.logResponseTo(logReq))
                 .build();
-        return requestSpecification;
     }
     public Properties getProp() throws IOException {
         Properties prop = new Properties();
