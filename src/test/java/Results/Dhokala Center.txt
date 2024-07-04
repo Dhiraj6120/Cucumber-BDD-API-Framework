@@ -16,7 +16,7 @@ Body:
         "lng": -87.66676744998608
     },
     "accuracy": 20,
-    "name": "Poha Center",
+    "name": "Dhokala Center",
     "phone_number": "+1 5058188687",
     "address": "Sinner",
     "types": [
@@ -27,7 +27,7 @@ Body:
     "language": "En-Ind"
 }
 HTTP/1.1 200 OK
-Date: Thu, 04 Jul 2024 04:41:32 GMT
+Date: Thu, 04 Jul 2024 04:42:21 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -40,8 +40,8 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "9ace685de2b256853bdeb4ff0e8eca67",
+    "place_id": "362628e53cc89bb4eab50ddae4d6b909",
     "scope": "APP",
-    "reference": "66b32e603f7f4422b99f11f28e933c0566b32e603f7f4422b99f11f28e933c05",
-    "id": "66b32e603f7f4422b99f11f28e933c05"
+    "reference": "669482bf988764e08bfea30d8556b621669482bf988764e08bfea30d8556b621",
+    "id": "669482bf988764e08bfea30d8556b621"
 }
