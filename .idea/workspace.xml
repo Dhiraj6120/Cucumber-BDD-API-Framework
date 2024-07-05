@@ -6,15 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6034e9a1-bb73-4e38-84f7-0b6bade14db3" name="Changes" comment="Daily Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DataSet/APICalls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DataSet/APICalls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Resources/GetTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Resources/GetTestData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Resources/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Resources/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Resources/getProperties.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Results/Burger king.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Results/Burger king.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Results/Dhokala Center.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Results/Dhokala Center.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Results/Idli centre.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Results/McDonalds.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Results/McDonalds.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Results/Poha Center.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/feature/placeValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/feature/placeValidation.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/StepDefinition.java" afterDir="false" />
     </list>
@@ -219,7 +214,14 @@
       <option name="presentableId" value="Default" />
       <updated>1720114577780</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Daily Commit">
+      <created>1720154481660</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1720154481660</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

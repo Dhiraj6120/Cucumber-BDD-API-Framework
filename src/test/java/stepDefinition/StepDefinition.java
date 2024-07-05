@@ -3,6 +3,7 @@ package stepDefinition;
 import DataSet.APICalls;
 import Resources.GetTestData;
 import Resources.Utils;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -15,20 +16,13 @@ import static io.restassured.RestAssured.given;
 public class StepDefinition extends Utils{
     RequestSpecification googleAddPlaceRequest;
     String googleAddPlaceAPIResponse;
-
-    @Then("{string} should be {string}")
-    public void shouldBe(String expectedKey, String expectedValue) {
-        JsonPath jsonPath = new JsonPath(googleAddPlaceAPIResponse);
-        Assert.assertEquals(jsonPath.getString(expectedKey), expectedValue);
-    }
-
+    String responseGetPlaceAPI;
     @Given("Add place API payload with {string} {string} {string}")
     public void addPlaceAPIPayloadWith(String name, String language, String address) {
         GetTestData addData = new GetTestData();
         GoogleAddPlaceAPIRequest googleAddPlaceAPIRequest = addData.addPlacePayload(name, language, address);
         googleAddPlaceRequest = given().spec(reqSpecs(name)).queryParam("key", "qaclick123").body(googleAddPlaceAPIRequest);
     }
-
     @When("User calls the {string} with {string} request")
     public void userCallsTheWithRequest(String apiCall, String method) {
         if (method.equalsIgnoreCase("POST")){
@@ -38,5 +32,20 @@ public class StepDefinition extends Utils{
             googleAddPlaceAPIResponse = googleAddPlaceRequest.when().get(APICalls.valueOf(apiCall).getApiCall())
                     .then().extract().response().asString();
         }
+    }
+    @Then("{string} should be {string}")
+    public void shouldBe(String expectedKey, String expectedValue) {
+        Assert.assertEquals(stringToJson(googleAddPlaceAPIResponse, expectedKey), expectedValue);
+    }
+
+    @And("Verify the {string} in {string}")
+    public void verifyTheIn(String name, String apiCall) {
+        RequestSpecification getAPIReq = given().spec(reqSpecs(name)).
+                queryParam("key", "qaclick123").queryParam("place_id", stringToJson(googleAddPlaceAPIResponse, "place_id"));
+
+        responseGetPlaceAPI = getAPIReq.get(APICalls.valueOf(apiCall).getApiCall())
+                .then().extract().response().asString();
+        String actualName = stringToJson(responseGetPlaceAPI, "name");
+        Assert.assertEquals(actualName, name);
     }
 }
