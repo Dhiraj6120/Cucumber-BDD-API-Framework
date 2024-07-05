@@ -6,15 +6,10 @@ import Resources.Utils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.path.json.JsonPath;
 import io.restassured.specification.RequestSpecification;
-import io.restassured.specification.ResponseSpecification;
 import org.testng.Assert;
 import pojo.GooglePlaceAPI.GoogleAddPlaceAPIRequest;
-
-import java.io.IOException;
-
 import static io.restassured.RestAssured.given;
 
 public class StepDefinition extends Utils{
@@ -34,10 +29,14 @@ public class StepDefinition extends Utils{
         googleAddPlaceRequest = given().spec(reqSpecs(name)).queryParam("key", "qaclick123").body(googleAddPlaceAPIRequest);
     }
 
-    @When("User calls the {string} with post request")
-    public void userCallsTheWithPostRequest(String apiCall) {
-//        String api = APICalls.valueOf(apiCall).getApiCall();
-        googleAddPlaceAPIResponse = googleAddPlaceRequest.when().post(APICalls.valueOf(apiCall).getApiCall())
-                .then().extract().response().asString();
+    @When("User calls the {string} with {string} request")
+    public void userCallsTheWithRequest(String apiCall, String method) {
+        if (method.equalsIgnoreCase("POST")){
+            googleAddPlaceAPIResponse = googleAddPlaceRequest.when().post(APICalls.valueOf(apiCall).getApiCall())
+                    .then().extract().response().asString();
+        } else if (method.equalsIgnoreCase("get")) {
+            googleAddPlaceAPIResponse = googleAddPlaceRequest.when().get(APICalls.valueOf(apiCall).getApiCall())
+                    .then().extract().response().asString();
+        }
     }
 }

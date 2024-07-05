@@ -16,20 +16,20 @@ public class GetTestData extends Utils{
         }
         GoogleAddPlaceAPIRequest googleAddPlaceAPIRequest = new GoogleAddPlaceAPIRequest();
         Location location = new Location();
-        location.setLat(41.878932334);
+        location.setLat(41.878932334121);
         location.setLng(-87.66676744998608);
         googleAddPlaceAPIRequest.setLocation(location);
         googleAddPlaceAPIRequest.setAccuracy(20);
         googleAddPlaceAPIRequest.setName(name);
-        googleAddPlaceAPIRequest.setPhone_number("+1 5058188687");
+        googleAddPlaceAPIRequest.setPhone_number("+1-5058188687");
         googleAddPlaceAPIRequest.setAddress(address);
         googleAddPlaceAPIRequest.setLanguage(language);
         ArrayList<String> types = new ArrayList<>();
-        types.add("asdnka");
-        types.add("iqiwp");
-        googleAddPlaceAPIRequest.setWebsite("Google.com");
+        types.add("New");
+        types.add("types");
+        googleAddPlaceAPIRequest.setWebsite("https://Google.com");
         googleAddPlaceAPIRequest.setTypes(types);
-        googleAddPlaceAPIRequest.setLanguage("En-Ind");
+        googleAddPlaceAPIRequest.setLanguage("En-Fr");
         return googleAddPlaceAPIRequest;
     }
 }

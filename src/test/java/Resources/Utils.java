@@ -11,10 +11,10 @@ import java.util.Properties;
 
 public class Utils {
     public static int ss = 1;
+    private RequestSpecification res;
+    PrintStream logReq;
     public RequestSpecification reqSpecs(String name){
 
-        PrintStream logReq;
-        
         try {
             logReq = new PrintStream(new FileOutputStream("src/test/java/Results/" + name +".txt"));
             ss++;
