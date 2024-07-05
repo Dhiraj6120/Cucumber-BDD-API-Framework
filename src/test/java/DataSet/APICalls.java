@@ -1,11 +1,10 @@
 package DataSet;
 
-import groovyjarjarantlr4.v4.codegen.model.SrcOp;
-
 public enum APICalls {
     addPlaceAPI("place/add/json"),
-    getPlaceAPI("place/get/json");
-    private String apiCall;
+    getPlaceAPI("place/get/json"),
+    deletePlaceAPI("place/delete/json");
+    private final String apiCall;
 
     APICalls(String apiCall) {
         this.apiCall = apiCall;

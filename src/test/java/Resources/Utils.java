@@ -4,6 +4,7 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
 import io.restassured.specification.RequestSpecification;
 
 import java.io.*;
@@ -11,10 +12,10 @@ import java.util.Properties;
 
 public class Utils {
     public static int ss = 1;
+    private RequestSpecification res;
+    PrintStream logReq;
     public RequestSpecification reqSpecs(String name){
 
-        PrintStream logReq;
-        
         try {
             logReq = new PrintStream(new FileOutputStream("src/test/java/Results/" + name +".txt"));
             ss++;
@@ -33,6 +34,11 @@ public class Utils {
         prop.load(fis);
 
         return prop;
+    }
+
+    public String stringToJson(String responseString, String key){
+        JsonPath jsonPath = new JsonPath(responseString);
+        return jsonPath.getString(key);
     }
 
 }

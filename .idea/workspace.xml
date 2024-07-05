@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6034e9a1-bb73-4e38-84f7-0b6bade14db3" name="Changes" comment="Working with Enums">
-      <change beforePath="$PROJECT_DIR$/src/test/java/DataSet/Data.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DataSet/Data.properties" afterDir="false" />
+    <list default="true" id="6034e9a1-bb73-4e38-84f7-0b6bade14db3" name="Changes" comment="Daily Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Resources/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Resources/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Results/Burger king.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Results/Burger king.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Results/Dhokala Center.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Results/Dhokala Center.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Results/McDonalds.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Results/McDonalds.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/feature/placeValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/feature/placeValidation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/StepDefinition.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,12 +66,25 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/test/java/Resources/Utils.java" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2in7dZRRy2MHtvmMP4sT6MxtgQ6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java/DataSet" />
@@ -116,6 +135,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="Code Optimization">
       <created>1720027503596</created>
@@ -180,7 +200,28 @@
       <option name="project" value="LOCAL" />
       <updated>1720068167689</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Working with Enums">
+      <created>1720068235119</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1720068235119</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6034e9a1-bb73-4e38-84f7-0b6bade14db3" name="Changes" comment="Working with Enums" />
+      <created>1720114577780</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720114577780</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Daily Commit">
+      <created>1720154481660</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1720154481660</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,11 +236,13 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Code Optimization" />
     <MESSAGE value="Added Website in Payload" />
     <MESSAGE value="Used Cucumber Scenario outline and Example for Data Driven Mechanism" />
     <MESSAGE value="Used Cucumber Scenario outline and Example for Data Driven Mechanism and Added new loginc for login the responce" />
     <MESSAGE value="Working with Enums" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working with Enums" />
+    <MESSAGE value="Daily Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Daily Commit" />
   </component>
 </project>
