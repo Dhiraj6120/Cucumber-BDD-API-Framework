@@ -1,8 +1,8 @@
 Request method:	POST
-Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json/?key=qaclick123
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123&key=qaclick123
 Proxy:			<none>
 Request params:	<none>
-Query params:	key=qaclick123
+Query params:	key=[qaclick123, qaclick123]
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
@@ -12,22 +12,22 @@ Multiparts:		<none>
 Body:
 {
     "location": {
-        "lat": 41.878932334,
+        "lat": 41.878932334121,
         "lng": -87.66676744998608
     },
     "accuracy": 20,
-    "name": "Dipak",
-    "phone_number": "+1 5058188687",
-    "address": "Kanadgaon",
+    "name": "Dhokala Center",
+    "phone_number": "+1-5058188687",
+    "address": "Sinner",
     "types": [
-        "asdnka",
-        "iqiwp"
+        "New",
+        "types"
     ],
-    "website": "Google.com",
-    "language": "En-Ind"
+    "website": "https://Google.com",
+    "language": "En-Fr"
 }
 HTTP/1.1 200 OK
-Date: Thu, 04 Jul 2024 03:55:28 GMT
+Date: Sat, 06 Jul 2024 17:10:41 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -40,8 +40,92 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "a74ccac8d276500691a9f774fcee5d66",
+    "place_id": "63c9753cba7bd03fc2b4f8a0bbb2e4b2",
     "scope": "APP",
-    "reference": "4c92dc5f6ec21887dde79c2148649eb04c92dc5f6ec21887dde79c2148649eb0",
-    "id": "4c92dc5f6ec21887dde79c2148649eb0"
+    "reference": "ef7422a3a2611cd8f7f08e6a674fe833ef7422a3a2611cd8f7f08e6a674fe833",
+    "id": "ef7422a3a2611cd8f7f08e6a674fe833"
 }
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&key=qaclick123&place_id=63c9753cba7bd03fc2b4f8a0bbb2e4b2
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=[qaclick123, qaclick123]
+				place_id=63c9753cba7bd03fc2b4f8a0bbb2e4b2
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sat, 06 Jul 2024 17:10:41 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 236
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "41.878932334121",
+        "longitude": "-87.666767449986"
+    },
+    "accuracy": "20",
+    "name": "Dhokala Center",
+    "phone_number": "+1-5058188687",
+    "address": "Sinner",
+    "types": "New,types",
+    "website": "https://Google.com",
+    "language": "En-Fr"
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123&key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=[qaclick123, qaclick123]
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sat, 06 Jul 2024 17:10:42 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 0
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json; charset=UTF-8
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123&key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=[qaclick123, qaclick123]
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sat, 06 Jul 2024 17:10:42 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 0
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json; charset=UTF-8

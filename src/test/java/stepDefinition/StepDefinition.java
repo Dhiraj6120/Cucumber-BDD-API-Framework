@@ -10,6 +10,8 @@ import io.cucumber.java.en.When;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
 import pojo.GooglePlaceAPI.GoogleAddPlaceAPIRequest;
+import java.io.IOException;
+
 import static io.restassured.RestAssured.given;
 
 public class StepDefinition extends Utils{
@@ -20,10 +22,10 @@ public class StepDefinition extends Utils{
     String googleAddPlaceAPIResponse;
     String googleGetPlaceAPIResponse;
     @Given("Add place API payload with {string} {string} {string}")
-    public void addPlaceAPIPayloadWith(String name, String language, String address) {
+    public void addPlaceAPIPayloadWith(String name, String language, String address) throws IOException {
         GetTestData addData = new GetTestData();
         GoogleAddPlaceAPIRequest googleAddPlaceAPIRequest = addData.addPlacePayload(name, language, address);
-        googleAddPlaceRequest = given().spec(reqSpecs(name)).queryParam("key", "qaclick123").body(googleAddPlaceAPIRequest);
+        googleAddPlaceRequest = given().spec(requestSpecification()).queryParam("key", "qaclick123").body(googleAddPlaceAPIRequest);
     }
     @When("User calls the {string} with {string} request")
     public void userCallsTheWithRequest(String apiCall, String method) {
@@ -45,13 +47,13 @@ public class StepDefinition extends Utils{
     }
 
     @And("Verify the {string} in {string}")
-    public void verifyTheIn(String name, String apiCall) {
-        googleGetAPIRequest = given().spec(reqSpecs(name)).
+    public void verifyTheIn(String name, String apiCall) throws IOException {
+        googleGetAPIRequest = given().spec(requestSpecification()).
                 queryParam("key", "qaclick123").queryParam("place_id", stringToJson(googleAddPlaceAPIResponse, "place_id"));
         userCallsTheWithRequest(apiCall, "GET");
         String actualName = stringToJson(googleGetPlaceAPIResponse, "name");
         Assert.assertEquals(actualName, name);
-        googleDeleteRequest = given().spec(reqSpecs(name)).queryParam("key", "qaclick123");
+        googleDeleteRequest = given().spec(requestSpecification()).queryParam("key", "qaclick123");
         userCallsTheWithRequest(apiCall, "Delete");
         shouldBe("status", "OK");
     }
