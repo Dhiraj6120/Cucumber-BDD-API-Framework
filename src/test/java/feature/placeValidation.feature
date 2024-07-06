@@ -6,6 +6,8 @@ Feature: Validate the Google place API's
     Then "status" should be "OK"
     And "scope" should be "APP"
     And Verify the "<name>" in "getPlaceAPI"
+    And User calls the "deletePlaceAPI" with "delete" request
+    Then "status" should be "OK"
     Examples:
       |name |language|address  |
       |Dhokala Center|Marathi |Sinner   |
