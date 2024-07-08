@@ -1,5 +1,6 @@
 Feature: Validate the Google place API's
 
+  @AddPlace
   Scenario Outline: Validate the Add place API
     Given Add place API payload with "<name>" "<language>" "<address>"
     When User calls the "addPlaceAPI" with "post" request
@@ -14,6 +15,7 @@ Feature: Validate the Google place API's
 #      |McDonalds|English |Chandwad |
 #      |Burger king|Hindi   |Kanadgaon|
 
+  @DeletePlace
   Scenario: Verify user able to delete place
     Given User has Delete API Payload
     When User calls the "deletePlaceAPI" with "delete" request
