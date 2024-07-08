@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6034e9a1-bb73-4e38-84f7-0b6bade14db3" name="Changes" comment="Daily Commit">
+    <list default="true" id="6034e9a1-bb73-4e38-84f7-0b6bade14db3" name="Changes" comment="Code Refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Resources/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Resources/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Results/Burger king.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Results/Burger king.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Results/Dhokala Center.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Results/Dhokala Center.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Results/McDonalds.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Results/McDonalds.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logging.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logging.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/Options/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/Options/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/feature/placeValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/feature/placeValidation.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/StepDefinition.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature-branch-03" />
+        <entry key="$PROJECT_DIR$" value="feature-branch-04" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,16 +41,16 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="feature-branch-04" />
-                    <option name="lastUsedInstant" value="1720068216" />
-                  </RecentBranch>
-                  <RecentBranch>
                     <option name="branchName" value="feature-branch-03" />
-                    <option name="lastUsedInstant" value="1720028729" />
+                    <option name="lastUsedInstant" value="1720412576" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="feature-branch-01" />
-                    <option name="lastUsedInstant" value="1720028728" />
+                    <option name="branchName" value="feature-branch-04" />
+                    <option name="lastUsedInstant" value="1720412568" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1720412510" />
                   </RecentBranch>
                 </list>
               </option>
@@ -77,14 +75,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java/DataSet" />
@@ -132,6 +130,9 @@
       <list>
         <item itemvalue="TestNG.TestRunner" />
         <item itemvalue="Cucumber Java.Scenario: Validate the Add place API" />
+        <item itemvalue="TestNG.TestRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Validate the Add place API" />
+        <item itemvalue="TestNG.TestRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -243,6 +244,7 @@
     <MESSAGE value="Used Cucumber Scenario outline and Example for Data Driven Mechanism and Added new loginc for login the responce" />
     <MESSAGE value="Working with Enums" />
     <MESSAGE value="Daily Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Daily Commit" />
+    <MESSAGE value="Code Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code Refactoring" />
   </component>
 </project>

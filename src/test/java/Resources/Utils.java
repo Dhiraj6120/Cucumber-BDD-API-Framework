@@ -11,29 +11,29 @@ import java.io.*;
 import java.util.Properties;
 
 public class Utils {
-    public static int ss = 1;
-    private RequestSpecification res;
-    PrintStream logReq;
-    public RequestSpecification reqSpecs(String name){
+    public static RequestSpecification req;
+    public RequestSpecification requestSpecification() throws IOException
+    {
 
-        try {
-            logReq = new PrintStream(new FileOutputStream("src/test/java/Results/" + name +".txt"));
-            ss++;
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+        if(req==null)
+        {
+            PrintStream log =new PrintStream(new FileOutputStream("logging.txt"));
+            req=new RequestSpecBuilder().setBaseUri(getGlobalValue("baseUrl")).addQueryParam("key", "qaclick123")
+                    .addFilter(RequestLoggingFilter.logRequestTo(log))
+                    .addFilter(ResponseLoggingFilter.logResponseTo(log))
+                    .setContentType(ContentType.JSON).build();
+            return req;
         }
-        return new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com/maps/api/")
-                .setContentType(ContentType.JSON).addFilter(RequestLoggingFilter.logRequestTo(logReq))
-                .addFilter(ResponseLoggingFilter.logResponseTo(logReq))
-                .build();
+        return req;
     }
-    public Properties getProp() throws IOException {
-        Properties prop = new Properties();
-        FileInputStream fis = new FileInputStream
-                ("/Users/dhiraj/Documents/Study/Cucumber BDD API Framework/src/test/java/DataSet/Data.properties");
-        prop.load(fis);
 
-        return prop;
+
+    public static String getGlobalValue(String key) throws IOException
+    {
+        Properties prop =new Properties();
+        FileInputStream fis =new FileInputStream("/Users/dhiraj/Documents/Study/Cucumber-BDD-API-Framework/src/test/java/DataSet/Data.properties");
+        prop.load(fis);
+        return prop.getProperty(key);
     }
 
     public String stringToJson(String responseString, String key){
