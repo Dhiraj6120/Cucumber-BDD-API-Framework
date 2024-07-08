@@ -27,7 +27,7 @@ Body:
     "language": "En-Fr"
 }
 HTTP/1.1 200 OK
-Date: Mon, 08 Jul 2024 04:40:22 GMT
+Date: Mon, 08 Jul 2024 17:04:24 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -40,17 +40,17 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "388d25c4c38b68861d1122ebb682d778",
+    "place_id": "1f67b87b753d582da56072e3ccff2ef3",
     "scope": "APP",
-    "reference": "0267c25a7f8c42a6af3e7b1cbd38309d0267c25a7f8c42a6af3e7b1cbd38309d",
-    "id": "0267c25a7f8c42a6af3e7b1cbd38309d"
+    "reference": "395e403f5d876c768e77053d657eb119395e403f5d876c768e77053d657eb119",
+    "id": "395e403f5d876c768e77053d657eb119"
 }
 Request method:	GET
-Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&key=qaclick123&place_id=388d25c4c38b68861d1122ebb682d778
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&key=qaclick123&place_id=1f67b87b753d582da56072e3ccff2ef3
 Proxy:			<none>
 Request params:	<none>
 Query params:	key=[qaclick123, qaclick123]
-				place_id=388d25c4c38b68861d1122ebb682d778
+				place_id=1f67b87b753d582da56072e3ccff2ef3
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
@@ -59,7 +59,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Mon, 08 Jul 2024 04:40:23 GMT
+Date: Mon, 08 Jul 2024 17:04:25 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -96,7 +96,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Mon, 08 Jul 2024 04:40:23 GMT
+Date: Mon, 08 Jul 2024 17:04:26 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -119,7 +119,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Mon, 08 Jul 2024 04:40:24 GMT
+Date: Mon, 08 Jul 2024 17:04:26 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
