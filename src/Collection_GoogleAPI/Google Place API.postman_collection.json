@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "c69fa27d-fdf3-417b-8170-3b0bccd756d2",
+		"name": "Google Place API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26067327"
+	},
+	"item": [
+		{
+			"name": "PostGoogleApi",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let googleAddPlaceAPIResponse = pm.response.json();",
+							"let place_id = googleAddPlaceAPIResponse.place_id;",
+							"// pm.environment.set(\"place_id\", place_id);",
+							"pm.collectionVariables.set(\"place_id\", place_id);",
+							"console.log(\"place_id created: \", place_id)",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"location\": {\n    \"lat\": -38.383494,\n    \"lng\": 33.427362\n  },\n  \"accuracy\": 50,\n  \"name\": \"Frontline house\",\n  \"phone_number\": \"(+91) 983 893 3937\",\n  \"address\": \"830-862 w 33rd street, Chicago\",\n  \"types\": [\n    \"shoe park\",\n    \"shop\"\n  ],\n  \"website\": \"http://google.com\",\n  \"language\": \"French-IN\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://rahulshettyacademy.com/maps/api/place/add/json/key =qaclick123"
+			},
+			"response": []
+		},
+		{
+			"name": "GetGooglePlaces",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id={{place_id}}",
+					"protocol": "https",
+					"host": [
+						"rahulshettyacademy",
+						"com"
+					],
+					"path": [
+						"maps",
+						"api",
+						"place",
+						"get",
+						"json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "qaclick123"
+						},
+						{
+							"key": "place_id",
+							"value": "{{place_id}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutGoogleAddress",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"place_id\":\"{{place_id}}\",\n\"address\":\"570 10th ave, New York\",\n\"key\":\"qaclick123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rahulshettyacademy.com/maps/api/place/update/json?key=qaclick123&place_id={{place_id}}",
+					"protocol": "https",
+					"host": [
+						"rahulshettyacademy",
+						"com"
+					],
+					"path": [
+						"maps",
+						"api",
+						"place",
+						"update",
+						"json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "qaclick123"
+						},
+						{
+							"key": "place_id",
+							"value": "{{place_id}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteGooglePlace",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"place_id\": \"{{place_id}}\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123",
+					"protocol": "https",
+					"host": [
+						"rahulshettyacademy",
+						"com"
+					],
+					"path": [
+						"maps",
+						"api",
+						"place",
+						"delete",
+						"json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "qaclick123"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"value": "",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "place_id",
+			"value": ""
+		}
+	]
+}
