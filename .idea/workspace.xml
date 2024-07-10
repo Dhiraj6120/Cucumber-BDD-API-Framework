@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6034e9a1-bb73-4e38-84f7-0b6bade14db3" name="Changes" comment="Code Refactoring">
+    <list default="true" id="6034e9a1-bb73-4e38-84f7-0b6bade14db3" name="Changes" comment="Project Done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -225,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1720458320823</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Project Done">
+      <created>1720460522622</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1720460522622</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -249,6 +256,7 @@
     <MESSAGE value="Daily Commit" />
     <MESSAGE value="Code Refactoring" />
     <MESSAGE value="Added TestNG reporting Mechanism" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added TestNG reporting Mechanism" />
+    <MESSAGE value="Project Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project Done" />
   </component>
 </project>
